@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BulkOrder.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Bulk Orders</title>
+
+
+
+<!-------------------Script for the desappering thing--------------------->
+    
+</head>
+    <body>
+        <div class="container-1">
+            <form>
+                <div class="title">Bulk Orders</div>
+
+                <div class="form-group radio">
+                    <label for="inputname">Action:</label>
+        
+                        <input type="radio" name="r1" checked/>
+                        <span>Switch</span>
+        
+                        <input type="radio" name="r1" >
+                        <span>Redemption</span>         
+                </div>
+                
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                        <label for="inputFund">Fund</label>
+                        <select id="inputFund" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="inputScheme">From Scheme</label>
+                        <select id="inputScheme" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group radio">
+                        <label for="inputname">Category:</label>
+        
+                            <input type="radio" name="r2" checked/>
+                            <span>Equity</span>
+        
+                            <input type="radio" name="r2" >
+                            <span>Debt</span>  
+                            
+                            <input type="radio" name="r2" />
+                            <span>Liquid</span>
+        
+                            <input type="radio" name="r2" >
+                            <span>Other</span>   
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="inputTargetSheme">Target Scheme</label>
+                        <select id="inputTargetScheme" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
