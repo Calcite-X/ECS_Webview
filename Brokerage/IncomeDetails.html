@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="IncomeDetails.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Investment details</title>
+
+
+
+<!-------------------Script for the desappering thing--------------------->
+<script>
+    $(function () {
+        $('input[name="daterange"]').daterangepicker({
+            opens: 'left'
+        }, function (start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+    });
+</script>    
+
+</head>
+    <body>
+        <div class="container-1">
+            <div class="title">Investment Details</div>
+            <form>
+                <div class="form-row">
+
+                    <div class="form-group col-md-4 datera">
+                        <input type="text" class="daterange" value="01/01/2018 - 01/15/2018" />
+                    </div>
+
+                    <div class="button">
+                        <div class="form-group buttons">
+                            <button type="submit" class="btn btn-primary">Go</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group radio">
+                        <label for="inputname">Group by:</label>
+                        <br>
+            
+                            <input type="radio" name="r1" checked/>
+                            <span>Fund</span>
+            
+                            <input type="radio" name="r1" >
+                            <span>Scheme</span>
+                            
+                            <input type="radio" name="r1" >
+                            <span>Category</span> 
+
+                            <input type="radio" name="r1"/>
+                            <span>Transation</span>
+            
+                            <input type="radio" name="r1" >
+                            <span>Rate</span>
+                            
+                            <input type="radio" name="r1" >
+                            <span>Relationship Manager</span> 
+
+                            <input type="radio" name="r1"/>
+                            <span>Sub Broker</span>
+            
+                            <input type="radio" name="r1" >
+                            <span>Family Head</span>
+                            
+                            <input type="radio" name="r1" >
+                            <span>Client</span> 
+
+                    </div>
+                </div>
+                <label for="inputname">Filter:</label>
+                    <br>
+                <div class="form-row">
+                    
+                    <div class="form-group col-md-3">
+                        <label for="inputCategory">Category</label>
+                        <select id="inputCategory" class="form-control">
+                          <option selected>Equity</option>
+                          <option>Dept</option>
+                          <option>Hybrid</option>
+                          <option>Liquid and Ultra shot</option>
+                          <option>Arbitage</option>
+                          <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="inputFunds">Funds</label>
+                        <select id="inputFunds" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputARN">ARN</label>
+                        <select id="inputARN" class="form-control">
+                          <option selected>ARN-1668</option>
+                          <option>ARN-000000</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState">Select User</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Relationship Manager</option>
+                          <option>Sub Broker</option>
+                          <option>Family Head</option>
+                          <option>Client</option>
+                        </select>
+                      </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="inputLocation">Location</label>
+                        <select id="inputLocation" class="form-control">
+                          <option selected>Top-Cites</option>
+                          <option>Bottom Cites</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group col-md-2">
+                        <label for="inputBrokerType">Brokerage Type</label>
+                        <select id="inputBrokerType" class="form-control">
+                          <option selected>All</option>
+                          <option>Trail</option>
+                          <option>Upfront</option>
+                          <option>Incentive</option>
+                          <option>Transaction Charges</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group col-md-2">
+                        <label for="inputAmt">Amount</label>
+                        <input type="text" class="form-control" id="inputAmt" placeholder="Minimum Amount">
+                      </div>
+                      <div class="form-group col-md-2 amt">
+                        <input type="text" class="form-control" id="inputAmt" placeholder="Miximum Amount">
+                      </div>
+
+                      <div class="form-group col-md-3">
+                        <label for="inputTransationDate">Transaction Date</label>
+                        <input type="date" class="form-control" id="inputTransationDate">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-check ">
+                      <input class="form-check-input " type="checkbox" id="gridCheck">
+                      <label class="form-check-label Checkbox-1" for="gridCheck">Claw back only</label>
+                    </div>
+                    <div class="form-check ">
+                      <input class="form-check-inputCheckbox-1" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">Include payout columns</label>
+                    </div>
+                </div>
+                <br>
+                <label for="inputname">View Type:</label>
+                    <br>
+                <div class="view">
+                    
+
+                        <input type="radio" name="r1" onclick="text(0)" checked />
+                        <label>On Screen</label>
+
+                        <input type="radio" name="r1" onclick="text(1)">
+                        <label>XLS</label>         
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
