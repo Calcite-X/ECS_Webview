@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <!-- bootstraplik -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- end -->
+    <style>
+      
+      ul > li {
+        display: inline;
+      }
+      h2{
+        font-size: 20px;
+      }
+      label{
+        padding-left: 5px;
+      }
+      button{
+        margin: auto;
+        padding: auto;
+        height: 30px;
+        width: 80px;
+        background-color: blue;
+        color: #fff;
+        border: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <div><a href="">-</a><span>Report Configuration</span></div>
+      <div>
+        <div>
+          <h2>Mode</h2>
+          <ul>
+            <li>
+              <input type="radio" name="Mode" id="Currently_Running" />
+              <label for="Currently_Running">Currently Running</label>
+            </li>
+            <li>
+              <input type="radio" name="Mode" id="Forthcoming" />
+              <label for="Forthcoming">Forthcoming</label>
+            </li>
+            <li>
+              <input type="radio" name="Mode" id="Prematurely_Terminated" />
+              <label for="Prematurely_Terminated">Prematurely Terminated</label>
+            </li>
+            <li>
+              <input type="radio" name="Mode" id="Procured" />
+              <label for="Procured">Procured</label>
+            </li>
+            <li>
+              <input type="radio" name="Mode" id="Due_for_Maturity" />
+              <label for="Due_for_Maturity">Due for Maturity</label>
+            </li>
+            <li>
+              <input type="radio" name="Mode" id="Expired" />
+              <label for="Expired">Expired</label>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Type</h2>
+          <ul>
+            <li><input type="radio" id="SIP" /><label for="SIP">SIP</label></li>
+            <li><input type="radio" id="STP" /><label for="STP">STP</label></li>
+            <li><input type="radio" id="SWP" /><label for="SWP">SWP</label></li>
+          </ul>
+        </div>
+        <div >
+          <ul>
+            <li>Detail</li>
+            <li class="form-switch"><input class="form-check-input" type="checkbox" /></li>
+            <li>Summary</li>
+          </ul>
+        </div>
+        <div>
+          <h2>view type</h2>
+          <ul>
+            <li>
+              <input type="radio" id="On_Screen" /><label for="On_Screen"
+                >On Screen</label
+              >
+            </li>
+            <li><input type="radio" id="XLS" /><label for="XLS">XLS</label></li>
+          </ul>
+        </div>
+        <div><button>Apply</button></div>
+      </div>
+    </div>
+  </body>
+</html>

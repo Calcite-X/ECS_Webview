@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      .group {
+        display: inline-block;
+      }
+      li{
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h4>Filter:</h4>
+        <div class="group">
+          <span>Variance Over %</span><br />
+          <input type="number" name="" id="" />
+        </div>
+        <div class="group">
+          <span>AUM Over</span><br />
+          <input type="number" name="" id="" />
+        </div>
+        <div class="group">
+          <select name="" id="">
+            <option value="">SELECT USER(S)</option>
+            <option value="">Relationship Manager</option>
+            <option value="">Sub Broker</option>
+            <option value="">Family Head</option>
+            <option value="">Client</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <h4>Assets class :</h4>
+        <input type="checkbox" name="" id="Mutual_Fund" /><label for="Mutual_Fund">Mutual Fund</label
+        ><input type="checkbox" name="" id="Share_Bond" /><label for="Share_Bond">Share & Bond</label
+        ><input type="checkbox" name="" id="Fixed_Deposit" /><label for="Fixed_Deposit">Fixed Deposit</label
+        ><input type="checkbox" name="" id="Other_Assets" /><label for="Other_Assets">Other Assets</label>
+      </div>
+      <div>
+        <h2>view type</h2>
+        <ul>
+          <li>
+            <input type="radio" id="On_Screen" /><label for="On_Screen"
+              >On Screen</label
+            >
+          </li>
+          <li>
+            <input type="radio" id="XLS" /><label for="XLS">XLS</label>
+          </li>
+        </ul>
+      </div>
+      <div><button>Apply</button></div>
+    </div>
+  </body>
+</html>
