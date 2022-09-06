@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        li{
+            display: inline;
+        }
+        #group{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <h4>view type</h4>
+        <ul>
+          <li>
+            <input type="radio" id="On_Screen" /><label for="On_Screen"
+              >On Screen</label
+            >
+          </li>
+          <li><input type="radio" id="XLS" /><label for="XLS">XLS</label></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Filter:</h4>
+        <div id="group">
+            <select name="" id="">
+                <option value="">SELECT USER(S)</option>
+                <option value="">Relationship Manager</option>
+                <option value="">Sub Broker</option>
+                <option value="">Family Head</option>
+                <option value="">Client</option>
+              </select>
+        </div>
+        <div id="group">
+            <h5>Period I</h5>
+            <input>
+
+        </div>
+        <div id="group">
+            <h5>Period II</h5>
+            <input type="text" name="" id="">
+        </div>
+      </div>
+      <div>
+        <h4>Transaction Type
+        </h4>
+        <input type="radio" name="transaction" id="SIP"><label for="SIP">SIP</label>
+        <input type="radio" name="transaction" id="STP"><label for="STP">STP</label>
+      </div>
+      <div><button>Apply</button></div>
+</div>    
+</body>
+</html>

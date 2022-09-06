@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ModelPorfolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Model Portfolio</title>
+
+
+
+    <!-------------------Script for the desappering thing--------------------->
+
+    <script>
+        function text(x) {
+            if (x == 0) document.getElementsByClassName("button-2").style.display = "block";
+            else document.getElementsByClassName("button-2").style.display = "none";
+            return;
+        }
+        function text(y) {
+            if (y == 0) document.getElementById('mycode-3').style.display = "block";
+            else document.getElementById('mycode-3').style.display = "none";
+            return;
+        }
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="title">Model Portfolio</div>
+        <form>
+            <div class="form-row">
+
+                <div class="form-group col-md-4">
+                    <label for="inputSearch">Search</label>
+                    <input type="text" class="form-control" id="inputSearch">
+                </div>
+
+                <div class="button-1">
+                    <div class="form-group buttons">
+                        <button type="submit" class="btn btn-primary">Portfolio Analysis</button>
+                        <button type="submit" class="btn btn-primary">New Model Portfoilio</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Select</th>
+                        <th scope="col">Model Name</th>
+                        <th scope="col">Description</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <div class="form-group radio">
+
+                                <input type="radio" name="r1" checked />
+                            </div>
+                        </th>
+                        <td>Aggresive</td>
+                        <td>Large, Mid & Small</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="form-group">
+
+                                <input type="radio" name="r1" />
+                            </div>
+                        </th>
+                        <td>BALANCED</td>
+                        <td>Balanced, Bal. Advn., Largecap.</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="form-group radio">
+
+                                <input type="radio" name="r1" />
+                            </div>
+                        </th>
+                        <td>Sectoral Portfolio</td>
+                        <td>Sector</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <span class="tableDown">3 rows visible out of 3.</span>
+        </form>
+        <form class="form-2">
+            <div class="form-row">
+                <div class="form-group radio-1">
+
+                    <input type="radio" name="r2" onclick="text(0)" />
+                    <span>Client</span>
+
+                    <input type="radio" name="r2" onclick="text(0)" />
+                    <span>Family Head</span>
+
+                    <input type="radio" name="r2" onclick="text(2)" checked />
+                    <span>Prospect</span>
+                </div>
+                    <div class="button-2" >
+                        <div class="form-group buttons">
+                            <button type="submit" class="btn btn-primary">New Client Portfoilio</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="form-group col-md-4 form-select-1">
+                <label for="inputName">Select</label>
+                <select id="inputName" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+
+        </form>
+
+        <div class="prospectDis" id="mycode-2">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Select</th>
+                        <th scope="col">Clent Name</th>
+                        <th scope="col">Description</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+            <label class="inTable">
+                No Data Found
+            </label>
+
+            <div class="form-row">
+
+                <div class="form-group col-md-4">
+                    <label for="inputPeriod">Period:</label>
+                    <select id="inputPeriod" class="form-control">
+                        <option>1 Yr</option>
+                        <option>2 Yr</option>
+                        <option>3 Yr</option>
+                        <option selected>5 Yr</option>
+                        <option>7 Yr</option>
+                        <option>10 Yr</option>
+                    </select>
+                </div>
+
+                <div class="button-3">
+                    <div class="form-group buttons">
+                        <button type="submit" class="btn btn-primary">Compare With Model</button>
+                        <button type="submit" class="btn btn-primary">Downlaod Portfolio Comparsion</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

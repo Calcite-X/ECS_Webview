@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ProfileIIN.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Invest Online Main</title>
+
+
+
+<!-------------------Script for the desappering thing--------------------->
+    <script>
+        function text(x) {
+            if(x==1) document.getElementById('mycode').style.display="block";
+        else document.getElementById('mycode').style.display = "none";
+        return;
+            }
+
+    </script>
+
+
+</head>
+<body>
+    <div class="container-1">
+        <div class="title">Personal Info</div> 
+    <form>
+        <div class="form-row">
+            <div class="form-group radio1">
+                <span class="details">Gender:</span>
+    
+                    <input type="radio" name="r1" onclick="text(0)"/>
+                    <label>Individual</label>
+    
+                    <input type="radio" name="r1" onclick="text(1)" checked >
+                    <label>On behalf of Minor</label>         
+            </div>
+        
+            <div class="form-group col-md-3">
+                <label for="inputEmail4">PAN</label>
+                <input type="text" class="form-control" id="inputPAN">
+            </div>
+
+            <div class="form-group col-md-5">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+            </div>
+        </div>
+        <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="inputDob">Date of Birth</label>
+            <input type="date" class="form-control" id="inputDob" placeholder="Select your date of birth">
+        </div>
+
+        <div class="form-group radio">
+            <span class="details">Gender:</span>
+
+                <input type="radio" name="r1" />
+                <label>Male</label>
+
+                <input type="radio" name="r1" >
+                <label>Female</label>         
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputARN">Choose ARN:</label>
+            <select id="inputARN" class="form-control">
+              <option selected>ARN-1668</option>
+            </select>
+          </div>
+    </div>
+    <div id="mycode">
+    <div class="form-row" >
+
+            <div class="form-group col-md-3" >
+                <label for="inputPAN">Guardian PAN:</label>
+                <input type="text" class="form-control" id="inputPAN">
+            </div>
+
+            <div class="form-group col-md-5">
+                <label for="inputName">Guardian Name:</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="inputDob">Guardian DOB:</label>
+                <input type="date" class="form-control" id="inputDob" placeholder="Select your date of birth">
+            </div>
+        </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputMobile">Mobile:</label>
+            <input type="text" class="form-control" id="inputMobile">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputProMode">Process Mode:</label>
+            <select id="inputProMode" class="form-control">
+              <option selected>Digital</option>
+              <option>Physical</option>
+            </select>
+        </div>
+        <div class="buttoon">
+        <div class="form-group buttons">
+          
+        <button type="submit" class="btn btn-primary">Proceed</button>
+        <button type="submit" class="btn btn-primary">Save and Exit</button>
+    </div>
+        </div>
+      </form>
+    </div>
+</body>
+</html>

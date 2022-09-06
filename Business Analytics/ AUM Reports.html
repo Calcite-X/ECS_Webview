@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- bootstraplik -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- end -->
+
+    <!-- select link -->
+    <!-- select end -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"
+    ></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
+    <!-- datepickeer -->
+    <style>
+      body>h3{
+        font-size: 5px;
+      }
+      body>h2{
+        font-size: 5px;
+      }
+      body {
+        background-color: #f2f2f2;
+      }
+      .sub_fun > button {
+        border: none;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        background-color: #c9c9cd;
+      }
+      .sub_fun {
+        font-size: 18px;
+      }
+      .content_box {
+        background-color: #fff;
+      }
+      li {
+        display: inline;
+      }
+      label {
+        padding-left: 5px;
+      }
+      #filter {
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="sub">
+      <div class="sub_fun">
+        <button>-</button>
+        <label> Report Configuration</label>
+      </div>
+      <div class="content_box">
+        <form action="" class="f">
+          <div>
+            <h3>Assets Class :</h3>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  onclick="report();"
+                  name="assets_class"
+                  id="Mutual_Fund"
+                />
+                <label for="Mutual_Fund">Mutual Fund </label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  onclick="report();"
+                  name="assets_class"
+                  id="Share_&_Bond"
+                />
+                <label for="Share_&_Bond">Share & Bond</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  onclick="report();"
+                  name="assets_class"
+                  id="Fixed_Deposit"
+                />
+                <label for="Fixed_Deposit">Fixed Deposit</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  onclick="report();"
+                  name="assets_class"
+                  id="Other_Assets"
+                />
+                <label for="Other_Assets">Other Assets</label>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Group By:</h3>
+            <ul>
+              <li>
+                <div id="1">
+                  <input type="radio" name="group_by" id="Fund" /><label
+                    for="Fund"
+                    >Fund
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div id="2">
+                  <input type="radio" name="group_by" id="Scheme" /><label
+                    for="Scheme"
+                    >Scheme</label
+                  >
+                </div>
+              </li>
+              <li>
+                <div id="3">
+                  <input type="radio" name="group_by" id="Category" /><label
+                    for="Category"
+                    >Category</label
+                  >
+                </div>
+              </li>
+              <li>
+                <div id="4">
+                  <input type="radio" name="group_by" id="Registrar" /><label
+                    for="Registrar"
+                    >Registrar</label
+                  >
+                </div>
+              </li>
+              <li>
+                <div id="5">
+                  <input
+                    type="radio"
+                    name="group_by"
+                    id="Relationship_Manager"
+                  /><label for="Relationship_Manager" class="form-label"
+                    >Relationship Manager</label
+                  >
+                </div>
+              </li>
+              <li>
+                <div id="6">
+                  <input type="radio" name="group_by" id="Sub_Broker" /><label
+                    for="Sub_Broker"
+                    class="form-label"
+                    >Sub Broker</label
+                  >
+                </div>
+              </li>
+              <li>
+                <div id="7">
+                  <input type="radio" name="group_by" id="Family_Head" /><label
+                    for="Family_Head"
+                    class="form-label"
+                    >Family Head</label
+                  >
+                </div>
+              </li>
+              <li>
+                <div id="8">
+                  <input type="radio" name="group_by" id="Client" /><label
+                    for="Client"
+                    class="form-label"
+                    >Client</label
+                  >
+                </div>
+              </li>
+              <li>
+                <div id="9">
+                  <input type="radio" name="group_by" id="Scrip" /><label
+                    for="Scrip"
+                    class="form-label"
+                    >Scrip</label
+                  >
+                </div>
+              </li>
+              <li>
+                <div id="10">
+                  <input
+                    type="radio"
+                    name="group_by"
+                    id="Asset_Category"
+                  /><label for="Asset_Category" class="form-label"
+                    >Asset Category</label
+                  >
+                </div>
+              </li>
+              <li>
+                <div id="11">
+                  <input type="radio" name="group_by" id="Asset_Name" /><label
+                    for="Asset_Name"
+                    >Asset Name</label
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="filter">
+            <h2>Filter:</h2>
+            <ul>
+              <li>
+                <div>
+                  <br />
+                  <select style="align-items: bottom;">
+                    <option value=""
+                      ><i class="bi bi-person"></i>Relationship Manager</option
+                    >
+                    <option value="">Sub Broker</option>
+                    <option value="">Family Head</option>
+                    <option value="">Client</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>
+                    Category:
+                  </h3>
+                  <select class="">
+                    <option value="">Debt: Banking and PSU</option>
+                    <option value="">Corporate Bond</option>
+                    <option>Credit Risk</option>
+                    <option> Dynamic Bond</option>
+                    <option> Fixed Income</option>
+                    <option> Floater</option>
+                    <option> FMP</option>
+                    <option> Gilt Fund</option>
+                    <option> Gilt Fund 10 yr duration</option>
+                    <option> Liquid</option>
+                    <option>Debt: Long Duration</option>
+                    <option>Debt: Low Duration</option>
+                    <option>Debt: Medium Duration</option>
+                    <option>Debt: Medium to Long Duration</option>
+                    <option>Debt: Money Market</option>
+                    <option>Debt: Overnight</option>
+                    <option>Debt: Short Duration</option>
+                    <option>Debt: Ultra Short Duration</option>
+                    <option>Equity: ContraEquity: Dividend Yield</option>
+                    <option>Equity: ELSSEquity: Flexi Cap </option
+                    ><option>Equity: Focused</option>
+                    <option>Equity: Global</option>
+                    <option>Equity: Index</option>
+                    <option>Equity: Large & Mid Cap</option>
+                    <option>Equity: Large Cap</option>
+                    <option>Equity: Mid Cap</option>
+                    <option>Equity: Multi Cap</option>
+                    <option>Equity: Sectoral</option>
+                    <option>Equity: Shares</option>
+                    <option>Equity: Small Cap</option>
+                    <option>Equity: Thematic</option>
+                    <option>Equity: Value</option>
+                    <option>Gold: Gold Funds</option>
+                    <option>Hybrid: Aggressive</option>
+                    <option>Hybrid: Arbitrage</option>
+                    <option>Hybrid: Balanced Advantage</option>
+                    <option>Hybrid: Conservative</option>
+                    <option>Hybrid: Equity Savings</option>
+                    <option>Hybrid: Multi-Asset</option>
+                    <option>Others</option>
+                    <option>Others: FoFs Domestic</option>
+                    <option>Others: FoFs Overseas</option>
+                    <option>Solution: Children Debt</option>
+                    <option>Solution: Children Equity</option>
+                    <option>Solution: Retirement Debt</option>
+                    <option>Solution: Retirement Equity</option>
+                    <option></option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>
+                    ARN:
+                  </h3>
+                  <select class="select">
+                    <option value="">All My ARNs </option>
+                    <option value="">ARN-1668</option>
+                    <option value="">ARN-00000</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>
+                    AUM as on Date:
+                  </h3>
+                  <input id="datepicker" data-provide="datepicker" />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>
+              View Type:
+            </h3>
+            <ul>
+              <li>
+                <input type="radio" id="On_Screen" /><label id="On_Screen"
+                  >On Screen</label
+                >
+              </li>
+              <li>
+                <input type="radio" id="XLS" /><label id="XLS">XLS</label>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button>submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      function report() {
+        Fund = document.getElementById("1");
+        Scheme = document.getElementById("2");
+        Category = document.getElementById("3");
+        Registrar = document.getElementById("4");
+        Relationship_Manager = document.getElementById("5");
+        Sub_Broker = document.getElementById("6");
+        Family_Head = document.getElementById("7");
+        Client = document.getElementById("8");
+        Scrip = document.getElementById("9");
+        Asset_Category = document.getElementById("10");
+        Asset_Name = document.getElementById("11");
+
+        if (document.getElementById("Mutual_Fund").checked) {
+          Fund.style.display = Scheme.style.display = Category.style.display = Registrar.style.display = Relationship_Manager.style.display = Sub_Broker.style.display = Family_Head.style.display = Client.style.display =
+            "block";
+          Asset_Category.style.display = Asset_Name.style.display = Scrip.style.display =
+            "none";
+        } else if (document.getElementById("Share_&_Bond").checked) {
+          Scrip.style.display = Relationship_Manager.style.display = Sub_Broker.style.display = Family_Head.style.display = Client.style.display =
+            "block";
+          Fund.style.display = Scheme.style.display = Category.style.display = Registrar.style.display = Asset_Category.style.display = Asset_Name.style.display =
+            "none";
+        } else if (document.getElementById("Fixed_Deposit").checked) {
+          Scheme.style.display = Relationship_Manager.style.display = Sub_Broker.style.display = Family_Head.style.display = Client.style.display =
+            "block";
+
+          Fund.style.display = Scrip.style.display = Category.style.display = Registrar.style.display = Asset_Category.style.display = Asset_Name.style.display =
+            "none";
+        } else if (document.getElementById("Other_Assets").checked) {
+          Asset_Category.style.display = Asset_Name.style.display = Relationship_Manager.style.display = Sub_Broker.style.display = Family_Head.style.display = Client.style.display =
+            "block";
+
+          Fund.style.display = Scrip.style.display = Category.style.display = Registrar.style.display = Scheme.style.display =
+            "none";
+        } else {
+          Fund.style.display = Scheme.style.display = Category.style.display = Registrar.style.display = Relationship_Manager.style.display = Sub_Broker.style.display = Family_Head.style.display = Client.style.display =
+            "block";
+          Asset_Category.style.display = Asset_Name.style.display = Scrip.style.display =
+            "none";
+        }
+      }
+    </script>
+    <script>
+      (function () {
+        $("select").selectpicker();
+        $("datepicker").datepicker({
+          uiLibrary: "bootstrap5",
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FolioLookup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Folio Lookup</title>
+
+    <script>
+        function text(x) {
+            if(x==0) document.getElementById('mycode').style.display="block";
+        else document.getElementById('mycode').style.display = "none";
+        return;
+            }
+
+    </script>
+</head>
+<body>
+    <div class="container-1">
+        <div class="title">Folio Lookup</div>       
+<br><h5>Folio:</h5>
+        <form action="#">
+            <div class="user-details">
+
+                <div class="input-box">
+                    <span class="details">Folio:</span>
+                    <input type="text" placeholder="Search Folio">
+                </div>
+    
+                <label for="tags">Applicant(Mapped To):</label>
+                <select class="tag" name="Select">
+                    <option value="">Search applicant</option>
+                    <option value="bidvalue1">Mr.</option>
+                    <option value="bidvalue1">Mrs.</option>
+                    <option value="bidvalue1">Ms.</option>
+                    <option value="bidvalue1">Dr.</option>
+                </select>
+                
+                <div class="input-box">
+                    <span class="details">Applicant(Folio)</span>
+                    <input type="text" placeholder="Search Applicant">
+                </div>
+                <br>
+                <label for="2">Fund:</label>
+                <select class="tag" id="2" name="Select">
+                    <option value="">Search applicant</option>
+                    <option value="bidvalue1">Mr.</option>
+                    <option value="bidvalue1">Mrs.</option>
+                    <option value="bidvalue1">Ms.</option>
+                    <option value="bidvalue1">Dr.</option>
+                </select>
+
+                <span >Catagory:</span>
+                <select class="tag" name="Select">
+                    <option value="">All</option>
+                    <option value="bidvalue1">Mr.</option>
+                    <option value="bidvalue1">Mrs.</option>
+                    <option value="bidvalue1">Ms.</option>
+                    <option value="bidvalue1">Dr.</option>
+                </select>
+                <br>
+
+                <span >RTA</span>
+                <select class="tag" name="Select">
+                    <option value="">All</option>
+                    <option value="bidvalue1">CAMS</option>
+                    <option value="bidvalue1">KARVY</option>
+                </select>
+
+                
+
+                <div class="view">
+                    <span class="details">View Type:</span>
+
+                        <input type="radio" name="r1" onclick="text(0)" checked />
+                        <label>On Screen</label>
+
+                        <input type="radio" name="r1" onclick="text(1)">
+                        <label>XLS</label>         
+                </div>
+            </div>
+     
+                <div class="feilds1">
+                <div class="feilds" id="mycode">
+                    <span class="details">Detail</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="details">Brief</span>
+                </div>
+
+                <div class="feilds">
+                    <span class="details">Show all Folios</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="details">Show active Folios</span>
+                </div>
+            </div>
+            <div class="save">
+                <button><a href="#">Apply</a></button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

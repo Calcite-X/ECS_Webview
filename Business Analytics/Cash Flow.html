@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <!-- bootstraplik -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- end -->
+    <style>
+      .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 400px;
+        font-family: sans-serif;
+      }
+
+      .tabs__label {
+        padding: 10px 16px;
+        cursor: pointer;
+      }
+
+      .tabs__radio {
+        display: none;
+      }
+
+      .tabs__content {
+        order: 1;
+        width: 100%;
+        line-height: 1.5;
+        font-size: 0.9em;
+        display: none;
+      }
+
+      .tabs__radio:checked + .tabs__label {
+        font-weight: bold;
+        background-color: #e2e2dd;
+        color: #009578;
+        border-top: 3px solid #b68181;
+        border-left: 3px solid #b68181;
+        border-right: 3px solid #b68181;
+      }
+
+      .tabs__radio:checked + .tabs__label + .tabs__content {
+        display: initial;
+        border-top: 3px solid #b68181;
+      }
+      .group1 > div {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div></div>
+      <div class="tabs">
+        <input type="radio" class="tabs__radio" name="tabs" id="tab1" checked />
+        <label for="tab1" class="tabs__label">Mutual Fund</label>
+        <div class="tabs__content">
+          <div class="group1">
+            <div>
+              <span>Group By</span><br />
+              <select name="" id="">
+                <option value="">Fund</option>
+                <option value="">Scheme</option>
+                <option value="">Relationship Manager</option>
+                <option value="">Sub Broker</option>
+                <option value="">Family Head</option>
+                <option value="">Client</option>
+              </select>
+            </div>
+            <div>
+              <span>Filter</span><br />
+              <select name="" id="">
+                <option value="">fds</option>
+                <option value="">fds</option>
+                <option value="">fds</option>
+                <option value="">fds</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <input type="radio" class="tabs__radio" name="tabs" id="tab2" />
+        <label for="tab2" class="tabs__label">Share & Bond</label>
+        <div class="tabs__content">
+          <div class="group1">
+            <div>
+              <span>Group By</span><br />
+              <select name="" id="">
+                <option value="">Scrip</option>
+                <option value="">Relationship Manager</option>
+                <option value="">Sub Broker</option>
+                <option value="">Family Head</option>
+                <option value="">Client</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

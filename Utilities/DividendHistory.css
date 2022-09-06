@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+    padding-left: 50px;
+
+}
+.container-1{
+    margin: auto;
+    max-width: 1200px;
+    width:100%;
+    background: #fff;
+    padding: 50px 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 20px #aaaaaa;
+}
+.title{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: underline red;
+
+}
+
+.radio{
+
+    margin: 30px 30px 0px 15px;
+}
+
+label{
+
+    font-weight: 500;
+}
+
+.buttoon{
+    margin: 50px 10px 10px 40%;
+}
+
+span{
+    margin-right: 20px;
+}
+
+.daterange{
+    font-weight: 400;
+    margin-top: 40px;
+    border-radius: 5px;
+    border-style:groove;
+}
+
+.datera{
+    margin-left: 30px;
+}
+
+.button{
+    margin: 32px 10px 10px 40%;
+}
