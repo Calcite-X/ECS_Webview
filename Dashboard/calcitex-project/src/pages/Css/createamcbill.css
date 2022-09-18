@@ -1,0 +1,113 @@
+.Createamcbill{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0;
+}
+.amcbillform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.amcbill_cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subamcbill_cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.downamc{
+    margin-top: 23px;
+}
+.amcbill_cont{
+    width: 95%;
+    display: flex;
+}
+.amccont1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sub_sub_cont1{
+    width: 33.3%;
+}
+.amcitem1{
+    width: 210px;
+}
+.amcd1{
+    width: 94px;
+    border: 1px solid black;
+}
+input[type=date]#Red3 {
+    width: 212px;
+    padding: 5px 0 5px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+input[type=date]#Red1 {
+    padding: 5px 20px;
+    margin-top: 3px;
+}
+input[type=date]#Red2 {
+    padding: 5px 20px;
+    margin-top: 3px;
+}
+.amcdash{
+    background-color: white;
+    padding: 7px 7px 8px 7px;
+    border: 1px solid black;
+    margin-top: 3px;
+}
+.inputamc{
+    padding: 5px 0 5px 20px;
+    border: 1.5px solid red;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+input[type=number]#Red {
+    margin-top: 3px;
+}
+.billgk{
+    width: 60%;
+}
+.amcbilln{
+    margin-top: 4vh;
+}
+.amcbilln1{
+    width: 95%;
+    display: flex;
+    margin-left: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10vh;
+}
+.inputr{
+    margin-top: 34px;
+    margin-left: 25px;
+}
+input[type=checkbox]#Red5 {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.amcbill123{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 0;
+}
+.amcbill123 p{
+    display: flex;
+    width: 100%;
+    padding: 5px 0;
+    justify-content: center;
+    background-color: aliceblue;
+    border: 1.2px solid gray ;
+    margin-top: 10vh;
+}

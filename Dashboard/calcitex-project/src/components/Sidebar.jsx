@@ -7,6 +7,8 @@ import {MdOutlineCancel} from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import {links} from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
+import "./sidebar.css";
+
 const Sidebar = () => {
     const {activeMenu,setActiveMenu,screenSize}=useStateContext();
     const handleCloseSidebar=()=>{
@@ -20,19 +22,15 @@ const Sidebar = () => {
         <div className="mt-6 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10 sidebarin">
         {activeMenu && (<>
             <div className="flex justify-between">
-                <Link to="/" onClick={handleCloseSidebar} className="items-center gap-3 ml-2 mt-4 text-xl font-extrablod tracking-tight dark:text-white text-slate-900">
-                <div className="block text-center">
+                <Link to="/" onClick={handleCloseSidebar} className="sidebox1">
+                <div className="block text-center sidebox ">
                    <img src={logo} alt="Ecsfinancial"/>
                    <span className='text-4xl block text-red-600 underline font-extrabold'>Ecsfinancial</span>  
                    <span className='block text-xs text-blue-700 font-bold'>Empowering & Enabling Growth Since-1996</span>
                    <span className='block text-base text-red-500 font-medium'>Toll free:1800 425 2960</span>
                 </div> 
                 </Link>
-                <TooltipComponent content="Menu" position="BottomCenter">
-                    <button type="button" onClick={()=>setActiveMenu((preActiveMenu)=>!preActiveMenu)} className="text-xl rounded-full p-3 hover:bg-light-gray mt4 block">
-                        <MdOutlineCancel/>
-                    </button>
-                </TooltipComponent>
+
             </div>
             <div className='mt-10'>
                 {links.map((item)=>(

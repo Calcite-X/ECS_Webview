@@ -1,0 +1,28 @@
+.btnicons{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    color: red;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.iconheads{
+    font-size: 11px;
+}
+.iconmades{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.iconbod{
+    font-size: 22px;
+    font-weight: 700;
+}
+.dashboxe1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }

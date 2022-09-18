@@ -1,0 +1,101 @@
+.Clientbillregister{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.clientbill1_cont2{
+    font-size: 13.5px;
+}
+.headbills{
+    font-weight: 800;
+}
+.subbillregis{
+    width: 80%;
+}
+.clientbill1_cont1{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+.headerconte2{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.cli_text{
+    margin-left: 10px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.clientbill1_cont2{
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.billcountsign{
+    background-color: aliceblue;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.shows{
+    visibility: hidden;
+}
+.subclientconte{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.headerconte3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.headerconte3{
+    width: 100%;
+}
+.childclintconte3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 20px;
+}
+.ghostbill{
+    width: 100%;
+}
+.datesbill1{
+    padding: 5px 0px;
+    border: 1px solid black;
+    
+}
+.dash_bill{
+    padding:6.5px 3px 6.5px 3px;
+    background-color: white;
+    border: 1px solid black;
+
+}
+.subclientconte{
+    width: 40%;
+}
+.subclientconte1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.selectsbill{
+    margin-top: 19px;
+    margin-right: 50px;
+    padding: 5px 0px;
+}
+.selectsbill1{
+    padding: 5px 0px;
+}
+.childclintconte2{
+    margin-right: 30px;
+}

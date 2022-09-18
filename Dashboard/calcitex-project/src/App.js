@@ -7,6 +7,8 @@ import background from "./data/Frame71.png";
 import{Dashboard,Billing,Brokerage,BusinessAnalysis,Clients,DataManagement,EmailSchedular,FolloLookup,Insurance,InvestOnlineNSE,RiskHandling,TransactionsView,Utilities,RiskProfiling,PortfolioScreener,ComprehensivePortfolio} from './pages';
 import { useStateContext } from './contexts/ContextProvider';
 import './App.css';
+import { Clientbillregister } from './pages/Clientbillregister';
+import { Createamcbill } from './pages/Createamcbill';
 
 const App = () => {
    //const activeMenu=true;
@@ -14,16 +16,10 @@ const App = () => {
     return (
         <div className='Appecs' style={{backgroundImage:`url(${background})`}}>
             <BrowserRouter>
-            <div className='flex relative dark:bg-main-dark-bg'>
-                {/* <div className="fixed right-4 bottom-4" style={{zIndex:'1000'}}>
-                    <TooltipComponent>
-                        <button type="button" className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white' style={{background:'blue',borderRadius:'50%'}}>
-                            <FiSettings/>
-                        </button>
-                    </TooltipComponent>
-                </div> */}
+            <div className='flex relative dark:bg-main-dark-bg alpha'>
+             
                 {activeMenu ?(
-                    <div className='mt-6 w-65 fixed sidebar mr-2 dark:bg-secondary-dark-bg'>
+                    <div className='mt-6 fixed sidebar  mr-2 dark:bg-secondary-dark-bg'>
                         <Sidebar/>
                     </div>
                 ):(
@@ -31,13 +27,16 @@ const App = () => {
                         <Sidebar/>
                     </div>
                 )}
-                <div className={`mr-3 midbody min-h-screen w-full ${activeMenu ?'md:ml-72':'flex-2'}`
-                }>
-                    <div className="fixed md:static dark:bg-main-dark-bg navabar w-full">
-                        <Navbar/>
-                    </div>
+
+
+                <div className='main_bg'>
+                    <div className={` main_body ${activeMenu ?'md:ml-72':'flex-2'} navcont_main`}>
+                        <div className="fixed md:static dark:bg-main-dark-bg navabar w-full">
+                            <Navbar/>
+                        </div>
+                    <div>
+                </div>
                 
-                <div>
                     <Routes>
                         {/*dashboards items */}
                         <Route path="/" element={<Dashboard/>}/>
@@ -57,8 +56,8 @@ const App = () => {
                         <Route path="/riskhandling" element={<RiskHandling/>}/>
                         <Route path="/risk-profiling" element={<RiskProfiling/>}/>
                         <Route path="/billing" element={<Billing/>}/>
-
-                        
+                        <Route path="/clientbillregister" element={<Clientbillregister/>}/>
+                        <Route path="/createamcbill" element={ <Createamcbill/> }/>
                     </Routes>
                 </div>
             </div>

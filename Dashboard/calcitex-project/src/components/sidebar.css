@@ -1,0 +1,11 @@
+.sidebox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.sidebox1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

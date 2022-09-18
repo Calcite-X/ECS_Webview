@@ -1,0 +1,29 @@
+.piehead{
+    font-weight: 1000;
+}
+.pietext{
+    display: flex;
+}
+.pietext1{
+    font-size: 17px;
+    font-weight: 1000;
+}
+.mtk{
+    margin-top: 8px;
+}
+.mtk1{
+    margin-top: 4px;
+    margin-left: 1px;
+}
+.bts1{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    color: red;
+}
+.bts2{
+    width: 5px;
+    height: 5px;
+    background-color: rgb(253, 178, 178);
+    color: rgb(253, 178, 178);
+}

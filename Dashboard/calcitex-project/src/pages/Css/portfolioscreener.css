@@ -1,0 +1,127 @@
+.portfolioscreener{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio_container{
+    background-color: whitesmoke;
+    width: 80%;
+    padding: 5vh 10vh;
+    border-radius: 50px;
+}
+
+.form_cont_port{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 5px;
+    font-size: 14px;
+}
+.header_sect_port{
+    font-size: 14px;
+    color: #596278;
+    font-weight: bold;
+    margin-top: 5vh;
+}
+.radio_cols_port{
+    color: red;
+    background-color: red;
+}
+.port_sub_cont{
+    margin-top: 5px;
+    display: flex;
+    max-width: 45%;
+    justify-content: space-between;
+}
+input[type=radio] {
+    accent-color: #FF0000;
+}
+.buttons{
+    margin-top: 4vh;
+    width: 120px;
+    background-color: #fc0202; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.port_btn{
+    display: flex;
+    justify-content: center;
+}
+.eval_head{
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 6vh;
+}
+.filter_container1{
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.holidays{
+    margin-right: 5px;
+    margin-top: 29px;
+}
+.subcontainer1{
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+}
+
+input[type=number] {
+    border: 1.5px solid red;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 23px;
+}
+.signs{
+    margin-top: 23px;
+    padding: 5px 10px;
+}
+.signs1{
+    margin-top: 4px;
+    padding: 5px 10px;
+}
+.filter_container2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.subcontainer3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.fli_sec_2{
+    padding: 5px 10px;
+    width: 23%;
+}
+.showselects{
+    background-color: white;
+    color: aliceblue;
+}
+.slect{
+    max-height: 200px; 
+    overflow: hidden auto;
+    min-width: 730px;
+    max-width: 730px;
+    position: absolute;
+    will-change: transform; 
+    top: 0px; 
+    left: 0px;
+    transform: translate3d(-5px, 26px, 0px);
+  
+}
+
+            
